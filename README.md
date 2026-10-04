@@ -12,7 +12,6 @@ In accordance with the course's **AI-Assisted Coding** policy:
 
 * **AI Assistance:** Google Antigravity (Gemini model) was used as a pair-programming coding assistant to help draft minimal semantic HTML structure, write standard CSS rules conforming to the course requirements, and format this documentation.
 * **Development & Version Control:** Visual Studio Code / Antigravity IDE, Git, and GitHub Pages.
-* **Student Responsibility:** All generated code has been reviewed, streamlined to the simplest possible implementation without extraneous libraries or tricks, and verified against each grading criterion. The student understands and is prepared to explain every HTML tag, CSS selector, and layout rule during the oral lab discussion.
 
 ---
 
