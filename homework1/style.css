@@ -1,0 +1,232 @@
+/* ==========================================================================
+   Web Application Development - Homework 1
+   Author: Arno Pilvar
+   Simplist possible CSS satisfying all PDF requirements:
+   - Flexbox layout for screen and mobile
+   - Navigation hover effect
+   - 5 mandatory CSS selectors (clearly commented below)
+   ========================================================================== */
+
+/* 1. Global Reset & Body Layout using Flexbox */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2. Semantic <header> & <nav> */
+header {
+  background-color: #cbd5e1;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   5 MANDATORY CSS SELECTORS (Spec Requirement 4 - 0.5 pt each)
+   -------------------------------------------------------------------------- */
+
+/* [Rule 1] Pseudo-class: Navigation hover effect (also fulfills Req 2) */
+nav a:hover {
+  background-color: #94a3b8;
+}
+
+/* [Rule 2] Descendant Selector: selects <p> inside <article> inside <main> */
+main article p {
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+/* [Rule 3] Child Selector: selects <article> directly inside <main> */
+main > article {
+  background-color: #cbd5e1;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* [Rule 4] Adjacent Sibling Selector: selects input/textarea right after label */
+label + textarea,
+label + input {
+  margin-top: 6px;
+}
+
+/* [Rule 5] General Sibling Selector: selects <p> elements that follow <h2> */
+h2 ~ p {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* --------------------------------------------------------------------------
+   Main Content Layout (Flexbox)
+   -------------------------------------------------------------------------- */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  gap: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   Feed Posts (index.html)
+   -------------------------------------------------------------------------- */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 4px;
+}
+
+.like-button img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Forms (addPost.html & login.html)
+   -------------------------------------------------------------------------- */
+form {
+  background-color: #cbd5e1;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Login card specific layout */
+.login-form {
+  text-align: center;
+  align-items: center;
+}
+
+.login-form a {
+  color: #0284c7;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+/* Form inputs & buttons */
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+/* --------------------------------------------------------------------------
+   Semantic <footer>
+   -------------------------------------------------------------------------- */
+footer {
+  background-color: #cbd5e1;
+  text-align: center;
+  padding: 14px;
+  color: #334155;
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Layout for Cellphones (Spec Requirement 5)
+   -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  main > article,
+  form {
+    max-width: 100%;
+  }
+
+  header {
+    padding: 10px 14px;
+  }
+}

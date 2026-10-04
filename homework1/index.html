@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostIt - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Semantic Header -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <span>|</span>
+      <a href="addPost.html">addPost</a>
+    </nav>
+    <a href="login.html">
+      <img src="res/avatar.svg" alt="User avatar" class="avatar">
+    </a>
+  </header>
+
+  <!-- Semantic Main containing 5 posts (Flexbox column) -->
+  <main>
+
+    <!-- Post 1: with photo (Tartu) -->
+    <article>
+      <div class="post-header">
+        <img src="res/avatar.svg" alt="User avatar">
+        <span class="post-date">Oct 22, 2022</span>
+      </div>
+      <img src="res/tartu.jpg" alt="Tartu Town Hall Square" class="post-image">
+      <p>Tartu 2022</p>
+      <button type="button" class="like-button" aria-label="Like post">
+        <img src="res/like.svg" alt="Like">
+      </button>
+    </article>
+
+    <!-- Post 2: without photo -->
+    <article>
+      <div class="post-header">
+        <img src="res/avatar.svg" alt="User avatar">
+        <span class="post-date">Oct 2, 2022</span>
+      </div>
+      <p>Anyone knows in which room is the lab today?</p>
+      <button type="button" class="like-button" aria-label="Like post">
+        <img src="res/like.svg" alt="Like">
+      </button>
+    </article>
+
+    <!-- Post 3: with photo (University of Tartu) -->
+    <article>
+      <div class="post-header">
+        <img src="res/avatar.svg" alt="User avatar">
+        <span class="post-date">Sep 28, 2022</span>
+      </div>
+      <img src="res/tartu_university.jpg" alt="University of Tartu" class="post-image">
+      <p>Beautiful autumn afternoon at Universitas Tartuensis 🍂</p>
+      <button type="button" class="like-button" aria-label="Like post">
+        <img src="res/like.svg" alt="Like">
+      </button>
+    </article>
+
+    <!-- Post 4: without photo -->
+    <article>
+      <div class="post-header">
+        <img src="res/avatar.svg" alt="User avatar">
+        <span class="post-date">Sep 25, 2022</span>
+      </div>
+      <p>Reminder: The lecture slides for Web Application Development are available on Moodle.</p>
+      <button type="button" class="like-button" aria-label="Like post">
+        <img src="res/like.svg" alt="Like">
+      </button>
+    </article>
+
+    <!-- Post 5: with photo (Study Lab) -->
+    <article>
+      <div class="post-header">
+        <img src="res/avatar.svg" alt="User avatar">
+        <span class="post-date">Sep 20, 2022</span>
+      </div>
+      <img src="res/study_lab.jpg" alt="Study session" class="post-image">
+      <p>Team study session preparing for Homework 1 and lab discussion.</p>
+      <button type="button" class="like-button" aria-label="Like post">
+        <img src="res/like.svg" alt="Like">
+      </button>
+    </article>
+
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+</body>
+</html>

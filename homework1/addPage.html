@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostIt - Add Post</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Semantic Header -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <span>|</span>
+      <a href="addPost.html">addPost</a>
+    </nav>
+    <a href="login.html">
+      <img src="res/avatar.svg" alt="User avatar" class="avatar">
+    </a>
+  </header>
+
+  <!-- Semantic Main with Add Post Form -->
+  <main>
+    <form action="index.html" method="get">
+      <label for="body">Post body</label>
+      <textarea id="body" name="body" placeholder="textarea" required></textarea>
+
+      <label for="file">Select file</label>
+      <input type="file" id="file" name="file">
+
+      <button type="submit" class="btn-primary">Create post</button>
+    </form>
+  </main>
+
+  <!-- Semantic Footer -->
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+</body>
+</html>
