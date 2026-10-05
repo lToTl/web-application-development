@@ -1,7 +1,7 @@
 /* ==========================================================================
    Web Application Development - Homework 1
    Author: Arno Pilvar
-   Simplist possible CSS satisfying all PDF requirements:
+   Simplest possible CSS satisfying all PDF requirements:
    - Flexbox layout for screen and mobile
    - Navigation hover effect
    - 5 mandatory CSS selectors (clearly commented below)
@@ -30,6 +30,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav {
