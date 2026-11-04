@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostIt - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Semantic Header with Profile Dropdown (Task 7: Figures 2 & 3) -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <span>|</span>
+      <a href="addPost.html">addPost</a>
+    </nav>
+
+    <div class="profile-menu-container">
+      <img
+        src="res/avatar.svg"
+        alt="User avatar"
+        class="avatar"
+        id="avatar-btn"
+      >
+      <div class="dropdown-menu" id="profile-dropdown">
+        <p>John Doe</p>
+        <p>john.doe@ut.ee</p>
+        <p><a href="login.html">logout</a></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Semantic Main: Posts are dynamically inserted here by script.js (Tasks 4 & 5) -->
+  <main id="posts-container"></main>
+
+  <!-- Semantic Footer -->
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
